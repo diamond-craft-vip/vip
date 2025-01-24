@@ -25,23 +25,19 @@
             display: inline-block;
         }
         table {
-            width: 80%;
-            margin: 2rem auto;
+            margin: 0 auto;
             border-collapse: collapse;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
+            width: 80%;
+            background: #fff;
         }
-        table th, table td {
-            padding: 1rem;
+        th, td {
             border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
         }
-        table th {
-            background-color: #333;
+        th {
+            background-color: #4CAF50;
             color: white;
-        }
-        table td {
-            background-color: #f9f9f9;
         }
         .button {
             background-color: #28a745;
@@ -68,7 +64,7 @@
             position: fixed;
             bottom: 10px;
             right: 10px;
-            width: 100px;
+            width: 100px; /* GIF boyutu */
             height: 100px;
         }
         .gif-container img {
@@ -90,48 +86,53 @@
                     <th>Paket</th>
                     <th>Özellikler</th>
                     <th>Fiyat</th>
-                    <th>Satın Al</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Maceracı VIP</td>
+                    <td><b>Maceracı VIP</b></td>
                     <td>
                         <ul>
-                            <li>Giriş efektleri</li>
-                            <li>VIP rütbesi</li>
-                            <li>Hızlı komut erişimi</li>
+                            <li>Ön-ek: <span style="color: green;">[Maceracı]</span></li>
+                            <li>Sohbet rengi: Yeşil</li>
+                            <li>Skin değiştirebilme: Hayır</li>
                         </ul>
                     </td>
                     <td>30 TL</td>
-                    <td><a href="https://iyzico.com/odeme-linkiniz" class="button">Satın Al</a></td>
                 </tr>
                 <tr>
-                    <td>Elite VIP</td>
+                    <td><b>Elite VIP</b></td>
                     <td>
                         <ul>
-                            <li>Maceracı VIP özellikleri</li>
-                            <li>Özel kozmetikler</li>
-                            <li>Ekstra oyun içi avantajlar</li>
+                            <li>Ön-ek: <span style="color: orange;">[Elite]</span></li>
+                            <li>Sohbet rengi: Turuncu</li>
+                            <li>Skin değiştirebilme: Evet</li>
                         </ul>
                     </td>
                     <td>50 TL</td>
-                    <td><a href="https://iyzico.com/odeme-linkiniz2" class="button">Satın Al</a></td>
                 </tr>
                 <tr>
-                    <td>Lord VIP</td>
+                    <td><b>Lord VIP</b></td>
                     <td>
                         <ul>
-                            <li>Elite VIP özellikleri</li>
-                            <li>Sunucuda isim öne çıkma</li>
-                            <li>Özel Yazılar</li>
+                            <li>Ön-ek: <span style="color: purple;">[Lord]</span></li>
+                            <li>Sohbet rengi: Mor</li>
+                            <li>Skin değiştirebilme: Evet</li>
                         </ul>
                     </td>
                     <td>120 TL</td>
-                    <td><a href="https://iyzico.com/odeme-linkiniz3" class="button">Satın Al</a></td>
                 </tr>
             </tbody>
         </table>
+        <br>
+        <p>Aşağıdaki butonlardan ödeme yapabilirsiniz:</p>
+        <a href="https://iyzico.com/odeme-linkiniz" class="button">Maceracı VIP Satın Al</a>
+        <br><br>
+        <a href="https://iyzico.com/odeme-linkiniz2" class="button">Elite VIP Satın Al</a>
+        <br><br>
+        <a href="https://iyzico.com/odeme-linkiniz3" class="button">Lord VIP Satın Al</a>
+        <br><br>
+        <!-- Discord Sunucusu Butonu -->
         <p>Destek ve duyurular için Discord sunucumuza katılın!</p>
         <a href="https://discord.gg/4RNzEpc5C7" target="_blank" class="discord-button">Discord Sunucumuza Katıl</a>
     </main>
