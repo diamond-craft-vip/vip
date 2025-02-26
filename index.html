@@ -30,7 +30,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.5;
+            opacity: 0.6;
         }
         .content {
             position: relative;
@@ -40,6 +40,11 @@
         .logo {
             width: 150px;
             margin-bottom: 20px;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
         }
         .btn {
             display: inline-block;
@@ -72,10 +77,27 @@
             border-radius: 10px;
             width: 250px;
             box-sizing: border-box;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
         }
         .vip-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+        .vip-card h3 {
+            margin-top: 0;
+        }
+        .vip-card .sword {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            animation: spin 3s infinite linear;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         /* Navigation Bar */
@@ -123,7 +145,7 @@
             <source src="your-video.mp4" type="video/mp4">
         </video>
         <div class="content">
-            <img src="diamond.gif" alt="Minecraft Diamond" width="150" class="logo"> <!-- Logo -->
+            <img src="diamond.gif" alt="Minecraft Diamond" class="logo"> <!-- Logo -->
             <h1>Diamond Sunucusuna Hoş Geldiniz</h1>
             <a href="https://discord.gg/YOUR_INVITE" class="btn">Discord'a Katıl</a>
             <a href="#vip" class="btn">VIP Satın Al</a>
@@ -133,16 +155,19 @@
     <div id="vip" class="vip-section">
         <h2>VIP Paketleri</h2>
         <div class="vip-card">
+            <img src="sword.png" alt="Dönen Kılıç" class="sword"> <!-- Dönen kılıç -->
             <h3>Baron</h3>
             <p>Fiyat: 25 TL</p>
             <a href="#" class="btn">Satın Al</a>
         </div>
         <div class="vip-card">
+            <img src="sword.png" alt="Dönen Kılıç" class="sword">
             <h3>Titan</h3>
             <p>Fiyat: 50 TL</p>
             <a href="#" class="btn">Satın Al</a>
         </div>
         <div class="vip-card">
+            <img src="sword.png" alt="Dönen Kılıç" class="sword">
             <h3>Legend</h3>
             <p>Fiyat: 85 TL</p>
             <a href="#" class="btn">Satın Al</a>
